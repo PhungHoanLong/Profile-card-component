@@ -1,0 +1,100 @@
+body
+{
+    margin: 0;
+}
+
+.bg-content
+{
+    background-color: hsl(185, 75%, 39%);
+    padding: 100px 0;
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -150px -400px, 700px 330px;
+    background-size: 800px;
+}
+
+.sub-content > div, .sub-content > img
+{
+    position: absolute;
+}
+
+.content
+{
+    text-align: center;
+    width: 320px;
+    margin: 50px auto;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.bg-sub-content
+{
+    background-image: url(/images/bg-pattern-card.svg);
+    height: 120px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.info
+{
+    display: inline-flex;
+    justify-content:space-around;
+    width: 100%;
+    border-top: 0.5px solid hsl(0, 0%, 59%);
+}
+
+.info > div
+{
+    margin: 20px 0;
+}
+
+.info > div > p, .sub-content > p
+{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.sub-content > p > span
+{
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+.sub-content > div
+{
+    border-radius: 53px;
+    height: 106px;
+    width: 106px;
+    background-color: whitesmoke;
+    top: -55px;; 
+    left: 33.5%;
+    margin-bottom: 10px;
+}
+
+.sub-content > img
+{
+    border-radius: 50px;
+    top: -50px;; 
+    left: 35%;
+}
+
+.sub-content
+{
+    position: relative;
+    padding: 60px 0 30px 0;
+}
+
+.sub-content > p > span, .info > div > span, .sub-content > span
+{
+    color: hsl(0, 0%, 59%);
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .bg-content
+    {
+        background-position: -350px -350px, 250px 350px;
+        background-size: 600px;  
+    }
+}
